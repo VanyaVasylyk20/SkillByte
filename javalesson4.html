@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об’єктно-орієнтоване програмування (ООП)</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+  <nav>
+        <div class="nazv">
+    <h4 align="center">Об’єктно-орієнтоване програмування (ООП)</h4>
+    <a href="javadeveloper.html"><button >Повернутися</button></a>
+        </div>
+    </nav>
+<main>
+  <section>
+    <p>ООП (Об’єктно-орієнтоване програмування) - це підхід до програмування, де програма будується з об’єктів, які мають властивості (дані) та методи (дії), із застосуванням інкапсуляції, наслідування, поліморфізму та абстракції для зручності, зрозумілості та повторного використання коду.</p>
+  </section>
+    <section>
+  <h3>Клас та об’єкт</h3>
+  <pre><code>
+class Car {
+    String model;
+    int year;
+}
+Car myCar = new Car();
+myCar.model = "BMW";
+myCar.year = 2020;
+  </code></pre>
+</section>
+
+<section>
+  <h3>Конструктор</h3>
+  <pre><code>
+class Car {
+    String model;
+    int year;
+
+    Car(String m, int y) {
+        model = m;
+        year = y;
+    }
+}
+Car myCar = new Car("Audi", 2022);
+  </code></pre>
+</section>
+
+<section>
+  <h3>Інкапсуляція</h3>
+  <pre><code>
+class Person {
+    private String name;
+
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Наслідування</h3>
+  <pre><code>
+class Animal {
+    void speak() {
+        System.out.println("Тварина говорить");
+    }
+}
+
+class Dog extends Animal {
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Поліморфізм</h3>
+  <pre><code>
+Animal a = new Dog();
+a.speak();
+  </code></pre>
+</section>
+
+<section>
+  <h3>Абстрактний клас</h3>
+  <pre><code>
+abstract class Shape {
+    abstract double area();
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Інтерфейс</h3>
+  <pre><code>
+interface Flyable {
+    void fly();
+}
+  </code></pre>
+</section>
+
+</main>
+    
+</body>
+</html>

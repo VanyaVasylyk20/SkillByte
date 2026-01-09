@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умови та цикли</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+  <nav>
+        <div class="nazv">
+    <h4 align="center">Умови та цикли</h4>
+       </div>
+       <a href="javadeveloper.html"><button >Повернутися</button></a>
+    </nav>
+<main>
+  <section>
+            <br>Умови (if, else) - це спосіб приймати рішення у програмі, виконуючи код лише тоді, коли виконується певна умова.
+            <br>Цикли (for, while) дозволяють повторювати блоки коду кілька разів, поки виконується певна умова.
+        </section>
+    <section>
+  <h3>Умовні оператори if / else</h3>
+  <pre><code>
+int x = 15;
+
+if (x > 10) {
+    System.out.println("Більше 10");
+} else {
+    System.out.println("10 або менше");
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>else if</h3>
+  <pre><code>
+int score = 75;
+
+if (score >= 90) {
+    System.out.println("Відмінно");
+} else if (score >= 70) {
+    System.out.println("Добре");
+} else {
+    System.out.println("Спробуй ще");
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>switch</h3>
+  <pre><code>
+int day = 2;
+
+switch (day) {
+    case 1: System.out.println("Понеділок"); break;
+    case 2: System.out.println("Вівторок"); break;
+    default: System.out.println("Невідомий день");
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Цикл for</h3>
+  <pre><code>
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Цикл while</h3>
+  <pre><code>
+int i = 1;
+
+while (i <= 5) {
+    System.out.println(i);
+    i++;
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Цикл do while</h3>
+  <pre><code>
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+} while (i <= 5);
+  </code></pre>
+</section>
+
+<section>
+  <h3>break та continue</h3>
+  <pre><code>
+for (int i = 1; i <= 5; i++) {
+    if (i == 3) continue;
+    System.out.println(i);
+}
+  </code></pre>
+</section>
+</main>
+    
+</body>
+</html>

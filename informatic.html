@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Інформатика</title>
+ <link rel="stylesheet" href="in.css">
+</head>
+<body>
+<nav>
+        <div class="nazv">
+            <h4 align="center">Інформатика</h4>
+        </div>
+        <a href="index.html"><button>Повернутися</button></a>
+    </nav>
+<main>
+
+<section>
+  <h2>1. Алгоритми та структури даних</h2>
+  <ul>
+    <li>Алгоритм – покрокова інструкція для розв’язання задачі.</li>
+    <li>Види: лінійні, розгалужені, циклічні.</li>
+    <li>Структури даних: масив, список, стек, черга, словник, множина.</li>
+    <li>Приклад задач: пошук максимального числа, сортування bubble/quick sort.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>2. Основи програмування</h2>
+  <ul>
+    <li>Змінні і типи даних: int, float, string, boolean.</li>
+    <li>Оператори: арифметичні, логічні, порівняння.</li>
+    <li>Умови: if, elif, else.</li>
+    <li>Цикли: for, while.</li>
+    <li>Функції: блок коду, який можна викликати, приймає аргументи і повертає результат.</li>
+    <pre><code>def sum_numbers(a, b):
+    return a + b</code></pre>
+  </ul>
+</section>
+
+<section>
+  <h2>3. Об’єктно-орієнтоване програмування (ООП)</h2>
+  <ul>
+    <li>Клас – шаблон для об’єктів, Об’єкт – екземпляр класу.</li>
+    <li>Атрибути – змінні класу або об’єкта, Методи – функції всередині класу.</li>
+    <li>Інкапсуляція, Наслідування, Поліморфізм.</li>
+    <pre><code>class Animal:
+    def speak(self):
+        print("Some sound")
+
+class Dog(Animal):
+    def speak(self):
+        print("Woof!")</code></pre>
+  </ul>
+</section>
+
+<section>
+  <h2>4. Робота з файлами</h2>
+  <ul>
+    <li>Відкриття файлів: "r" – читання, "w" – запис.</li>
+    <li>Формати: txt, csv, json.</li>
+    <li>Закриття файлу: file.close() або with open(...) as file:</li>
+    <li>Обробка помилок: try / except.</li>
+    <pre><code>with open("data.txt", "r") as f:
+    content = f.read()</code></pre>
+  </ul>
+</section>
+
+<section>
+  <h2>5. Основи операційних систем</h2>
+  <ul>
+    <li>Процес – виконання програми.</li>
+    <li>Потік – підпроцес одного процесу.</li>
+    <li>Оперативна памʼять – тимчасове зберігання даних.</li>
+    <li>Файлова система – структура файлів і папок.</li>
+    <li>Командний рядок – запуск програм та адміністрування ОС.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>6. Бази даних</h2>
+  <ul>
+    <li>Таблиці: рядки = записи, стовпці = поля.</li>
+    <li>SQL команди: SELECT, INSERT, UPDATE, DELETE.</li>
+    <li>Первинний ключ (PK), Зовнішній ключ (FK).</li>
+    <pre><code>SELECT name, age FROM users WHERE age > 18;</code></pre>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Комп’ютерні мережі</h2>
+  <ul>
+    <li>IP-адреса – унікальна адреса пристрою.</li>
+    <li>Порт – канал комунікації (80 – HTTP, 443 – HTTPS).</li>
+    <li>DNS – перетворює домен у IP.</li>
+    <li>Протоколи: TCP, UDP, HTTP/HTTPS.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>8. Інтернет та веб-технології</h2>
+  <ul>
+    <li>Клієнт – браузер / додаток.</li>
+    <li>Сервер – приймає запити, повертає відповіді.</li>
+    <li>REST API – обмін даними (GET, POST, PUT, DELETE).</li>
+    <li>Формати даних: JSON, XML.</li>
+    <pre><code>import requests
+response = requests.get("https://api.example.com/data")
+print(response.json())</code></pre>
+  </ul>
+</section>
+
+<section>
+  <h2>9. Системи контролю версій</h2>
+  <ul>
+    <li>Git – контроль змін коду.</li>
+    <li>Основні команди: git init, git add, git commit, git push, git pull.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>10. Алгоритмічна складність</h2>
+  <ul>
+    <li>O(1) – константний час.</li>
+    <li>O(n) – лінійна складність.</li>
+    <li>O(log n) – логарифмічна (бінарний пошук).</li>
+    <li>O(n^2) – квадратична (сортування вставкою).</li>
+  </ul>
+</section>
+
+<section>
+  <h2>11. Основи кібербезпеки</h2>
+  <ul>
+    <li>Хешування паролів (SHA256, bcrypt).</li>
+    <li>HTTPS – шифрування даних.</li>
+    <li>Захист від SQL ін’єкцій та XSS.</li>
+    <li>Антивірус, оновлення системи.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>12. Налагодження та тестування</h2>
+  <ul>
+    <li>Debugging – пошук та виправлення помилок.</li>
+    <li>Логування – print або логери.</li>
+    <li>Unit-тести – перевірка окремих функцій.</li>
+    <li>Інтеграційні тести – перевірка взаємодії модулів.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>13. Архітектура програм</h2>
+  <ul>
+    <li>MVC: Model – дані, View – інтерфейс, Controller – логіка.</li>
+    <li>Модульність – код поділений на файли та функції.</li>
+    <li>Переваги: зрозумілість, повторне використання, легше тестування.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>14. Основи штучного інтелекту</h2>
+  <ul>
+    <li>Машинне навчання – навчання програми на даних.</li>
+    <li>Класифікація – визначення типу (spam/not spam).</li>
+    <li>Регресія – прогноз чисел (ціна, температура).</li>
+    <li>Приклади: рекомендації, чат-боти, розпізнавання облич.</li>
+  </ul>
+</section>
+</main>
+
+</body>
+</html>

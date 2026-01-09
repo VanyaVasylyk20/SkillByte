@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Функції та модулі</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+    <h4 align="center">Функції та модулі</h4>
+       </div>
+       <a href="pythondeveloper.html"><button >Повернутися</button></a>
+    </nav>
+
+    <main>
+        <section>
+            <br>Функція - це фрагмент коду, який виконує певне завдання і може використовуватися багато разів у програмі.
+            <br>Модуль - це файл з кодом, який містить функції, класи або змінні, які можна імпортувати та використовувати в інших програмах.
+        </section>
+        <section>
+    <h3>1. Створення функцій</h3>
+    <pre><code>def say_hello():
+    print("Привіт!")</code></pre>
+</section>
+
+<section>
+    <h3>2. Параметри функцій</h3>
+    <pre><code>def greet(name):
+    print("Привіт,", name)
+
+greet("Іван")
+greet("Оля")</code></pre>
+</section>
+
+<section>
+    <h3>3. Повернення значень</h3>
+    <pre><code>def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)</code></pre>
+</section>
+
+<section>
+    <h3>4. Локальні та глобальні змінні</h3>
+    <pre><code>x = 10
+
+def test():
+    x = 5
+    print(x)
+
+test()
+print(x)</code></pre>
+</section>
+
+<section>
+    <h3>5. Імпорт модулів</h3>
+    <pre><code>import math
+print(math.sqrt(16))
+
+from random import randint
+print(randint(1, 10))</code></pre>
+</section>
+
+<section>
+    <h3>6. Власний модуль</h3>
+    <pre><code># файл mymodule.py
+def hello():
+    print("Hello from module!")</code></pre>
+</section>
+
+<section>
+    <h3>7. Використання власного модуля</h3>
+    <pre><code>import mymodule
+mymodule.hello()</code></pre>
+</section>
+
+
+
+
+
+
+
+    </main>
+    
+</body>
+</html>

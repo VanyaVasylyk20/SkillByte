@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об’єктно-орієнтоване програмування (ООП)</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+    <h4 align="center">Об’єктно-орієнтоване програмування (ООП)</h4>
+       </div>
+       <a href="pythondeveloper.html"><button >Повернутися</button></a>
+    </nav>
+
+    <main>
+        <section>
+            <p>ООП (Об’єктно-орієнтоване програмування) - це підхід до програмування, де програма будується з об’єктів, які мають властивості (дані) та методи (дії), із застосуванням інкапсуляції, наслідування, поліморфізму та абстракції для зручності, зрозумілості та повторного використання коду.</p>
+        </section>
+        <section>
+    <h3>1. Створення класу</h3>
+    <pre><code>class Student:
+    pass</code></pre>
+</section>
+
+<section>
+    <h3>2. Конструктор __init__</h3>
+    <pre><code>class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age</code></pre>
+</section>
+
+<section>
+    <h3>3. Створення об'єкта</h3>
+    <pre><code>s1 = Student("Іван", 18)
+print(s1.name)
+print(s1.age)</code></pre>
+</section>
+
+<section>
+    <h3>4. Методи класу</h3>
+    <pre><code>class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def info(self):
+        print(self.name, self.age)</code></pre>
+</section>
+
+<section>
+    <h3>5. Наслідування</h3>
+    <pre><code>class CollegeStudent(Student):
+    def __init__(self, name, age, college):
+        super().__init__(name, age)
+        self.college = college</code></pre>
+</section>
+
+<section>
+    <h3>6. Інкапсуляція</h3>
+    <pre><code>class Person:
+    def __init__(self, name):
+        self.__name = name  # приватне поле
+
+    def get_name(self):
+        return self.__name</code></pre>
+</section>
+
+<section>
+    <h3>7. Поліморфізм</h3>
+    <pre><code>class Dog:
+    def sound(self):
+        print("Гав")
+
+class Cat:
+    def sound(self):
+        print("Мяу")
+
+animals = [Dog(), Cat()]
+for a in animals:
+    a.sound()</code></pre>
+</section>
+    </main>
+</body>
+</html>

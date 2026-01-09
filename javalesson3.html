@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методи та масиви</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+  <nav>
+        <div class="nazv">
+    <h4 align="center">Методи та масиви</h4>
+       </div>
+       <a href="javadeveloper.html"><button >Повернутися</button></a>
+    </nav>
+<main>
+  <section>
+    <br>Масив - це структура даних, яка зберігає багато значень одного типу у впорядкованому порядку під одним ім’ям.
+    <br>Метод - це блок коду, який виконує певне завдання і може бути викликаний з інших частин програми.
+  </section>
+    <section>
+  <h3>Створення методів</h3>
+  <pre><code>
+public static void sayHello() {
+    System.out.println("Привіт Java");
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Метод з параметрами</h3>
+  <pre><code>
+public static void showSum(int a, int b) {
+    System.out.println(a + b);
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Метод з return</h3>
+  <pre><code>
+public static int sum(int a, int b) {
+    return a + b;
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Перевантаження методів</h3>
+  <pre><code>
+public static int sum(int a, int b) {
+    return a + b;
+}
+
+public static double sum(double a, double b) {
+    return a + b;
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Масиви</h3>
+  <pre><code>
+int[] numbers = {1, 2, 3, 4, 5};
+  </code></pre>
+</section>
+
+<section>
+  <h3>Доступ до елементів масиву</h3>
+  <pre><code>
+System.out.println(numbers[0]);
+  </code></pre>
+</section>
+
+<section>
+  <h3>Перебір масиву</h3>
+  <pre><code>
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Багатовимірні масиви</h3>
+  <pre><code>
+int[][] matrix = {
+    {1, 2},
+    {3, 4}
+};
+
+System.out.println(matrix[0][1]);
+  </code></pre>
+</section>
+</main>
+</body>
+</html>

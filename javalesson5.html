@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колекції та робота з даними</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+  <nav>
+        <div class="nazv">
+    <h4 align="center">Колекції та робота з даними</h4>
+    <a href="javadeveloper.html"><button >Повернутися</button></a>
+  </div>
+  </nav>
+<main>
+  <section>
+    <br>Колекції даних - це способи зберігати і групувати багато значень разом в одній змінній.Вони потрібні, щоб не створювати десятки окремих змінних для схожих даних.
+  </section>
+    <section>
+  <h3>ArrayList</h3>
+  <pre><code>
+ArrayList<String> names = new ArrayList<>();
+names.add("Anna");
+names.add("Oleh");
+System.out.println(names.get(0));
+  </code></pre>
+</section>
+
+<section>
+  <h3>LinkedList</h3>
+  <pre><code>
+LinkedList<Integer> numbers = new LinkedList<>();
+numbers.add(5);
+numbers.add(10);
+  </code></pre>
+</section>
+
+<section>
+  <h3>HashSet</h3>
+  <pre><code>
+HashSet<String> cities = new HashSet<>();
+cities.add("Kyiv");
+cities.add("Lviv");
+cities.add("Kyiv");
+System.out.println(cities);
+  </code></pre>
+</section>
+
+<section>
+  <h3>HashMap</h3>
+  <pre><code>
+HashMap<String, Integer> grades = new HashMap<>();
+grades.put("Ivan", 10);
+grades.put("Maria", 12);
+System.out.println(grades.get("Ivan"));
+  </code></pre>
+</section>
+
+<section>
+  <h3>Перебір колекцій</h3>
+  <pre><code>
+for (String name : names) {
+    System.out.println(name);
+}
+  </code></pre>
+</section>
+
+<section>
+  <h3>Сортування</h3>
+  <pre><code>
+Collections.sort(names);
+System.out.println(names);
+  </code></pre>
+</section>
+
+<section>
+  <h3>Comparator</h3>
+  <pre><code>
+Collections.sort(names, Collections.reverseOrder());
+  </code></pre>
+</section>
+
+</main>
+    
+</body>
+</html>

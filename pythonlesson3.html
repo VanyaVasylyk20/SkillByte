@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колекції даних</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+    <h4 align="center">Колекції даних</h4>
+       </div>
+       <a href="pythondeveloper.html"><button >Повернутися</button></a>
+    </nav>
+
+    <main>
+        <section>
+            Колекції даних - це способи зберігати і групувати багато значень разом в одній змінній.Вони потрібні, щоб не створювати десятки окремих змінних для схожих даних.
+        </section>
+        <section>
+    <h3>1. Списки (list)</h3>
+    <pre><code>numbers = [1, 2, 3, 4, 5]
+names = ["Іван", "Оля", "Марія"]
+
+print(numbers[0])   # перший елемент
+numbers.append(6)   # додати елемент
+numbers.remove(3)   # видалити 3
+print(len(numbers)) # кількість елементів</code></pre>
+</section>
+
+<section>
+    <h3>2. Кортежі (tuple)</h3>
+    <pre><code>coords = (10, 20)
+print(coords[0])
+# coords[0] = 5  # помилка, кортеж незмінний</code></pre>
+</section>
+
+<section>
+    <h3>3. Множини (set)</h3>
+    <pre><code>nums = {1, 2, 3, 3, 4}
+print(nums)  # повтори автоматично видаляються
+
+nums.add(5)
+nums.remove(2)</code></pre>
+</section>
+
+<section>
+    <h3>4. Словники (dict)</h3>
+    <pre><code>student = {
+    "name": "Іван",
+    "age": 18,
+    "grade": 10
+}
+
+print(student["name"])
+student["age"] = 19
+student["city"] = "Одеса"</code></pre>
+</section>
+
+<section>
+    <h3>5. Перебір колекцій</h3>
+    <pre><code>for n in numbers:
+    print(n)
+
+for key, value in student.items():
+    print(key, "=", value)</code></pre>
+</section>
+    </main>
+    
+</body>
+</html>

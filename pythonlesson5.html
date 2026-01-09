@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота з файлами та помилки</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+    <h4 align="center">Робота з файлами та помилки</h4>
+       </div>
+       <a href="pythondeveloper.html"><button >Повернутися</button></a>
+    </nav>
+    
+    <main>
+        <section>
+            <br>Робота з файлами — це збереження даних на комп’ютері або читання даних з файлу.Файли потрібні, щоб програма могла зберігати інформацію навіть після закриття.
+            <br>Обробка помилок — це спосіб передбачити можливі проблеми під час виконання програми і правильно на них реагувати, щоб програма не зупинялася раптово.
+        </section>
+<section>
+    <h3>1. Відкриття файлу</h3>
+    <pre><code>file = open("data.txt", "r")
+text = file.read()
+print(text)
+file.close()</code></pre>
+</section>
+
+<section>
+    <h3>2. Запис у файл</h3>
+    <pre><code>file = open("data.txt", "w")
+file.write("Привіт, файл!")
+file.close()</code></pre>
+</section>
+
+<section>
+    <h3>3. Конструкція with open</h3>
+    <pre><code>with open("data.txt", "r") as f:
+    print(f.read())</code></pre>
+</section>
+
+<section>
+    <h3>4. Обробка помилок try / except</h3>
+    <pre><code>try:
+    a = int(input("Введи число: "))
+    print(10 / a)
+except ValueError:
+    print("Потрібно ввести число!")
+except ZeroDivisionError:
+    print("На нуль ділити не можна!")
+finally:
+    print("Кінець програми")</code></pre>
+</section>
+
+<section>
+    <h3>5. Перевірка існування файлу</h3>
+    <pre><code>import os
+
+if os.path.exists("data.txt"):
+    print("Файл існує")
+else:
+    print("Файл не знайдено")</code></pre>
+</section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+            <h4 align="center">CSS</h4>
+        </div>
+        <a href="webdeveloper.html"><button>Повернутися</button></a>
+    </nav>
+
+<main>
+<section>
+    <h3>Що таке CSS</h3>
+    <pre><code>
+CSS (Cascading Style Sheets) — це мова стилів,
+яка відповідає за зовнішній вигляд веб-сторінки.
+
+CSS:
+- задає кольори, шрифти, розміри
+- працює разом з HTML
+- робить сайт красивим
+    </code></pre>
+</section>
+
+<section>
+    <h3>Підключення CSS</h3>
+    <pre><code>
+Зовнішній файл (рекомендовано):
+
+&lt;link rel="stylesheet" href="style.css"&gt;
+
+CSS-файл:
+body {
+  background-color: white;
+}
+    </code></pre>
+</section>
+
+<section>
+    <h3>CSS-синтаксис</h3>
+    <pre><code>
+Синтаксис CSS:
+
+селектор {
+  властивість: значення;
+}
+
+Приклад:
+p {
+  color: red;
+  font-size: 16px;
+}
+    </code></pre>
+</section>
+
+<section>
+    <h3>Селектори CSS</h3>
+    <pre><code>
+Селектор за тегом:
+p { color: blue; }
+
+За класом:
+.text { color: green; }
+
+За id:
+#title { font-size: 24px; }
+
+HTML:
+&lt;p class="text"&gt;Текст&lt;/p&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h3>Кольори та фон</h3>
+    <pre><code>
+Колір тексту:
+color: red;
+color: #ff0000;
+
+Фон:
+background-color: yellow;
+background-image: url("img.jpg");
+    </code></pre>
+</section>
+
+<section>
+    <h3>Текст і шрифти</h3>
+    <pre><code>
+font-size: 18px;
+font-family: Arial;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+    </code></pre>
+</section>
+
+<section>
+    <h3>Розміри та відступи</h3>
+    <pre><code>
+width: 200px;
+height: 100px;
+
+Відступи:
+margin: 10px;
+padding: 15px;
+
+Рамка:
+border: 1px solid black;
+    </code></pre>
+</section>
+
+<section>
+    <h3>Блочні та рядкові елементи</h3>
+    <pre><code>
+display: block;
+display: inline;
+display: inline-block;
+display: none;
+
+Приклади блочних:
+&lt;div&gt; &lt;p&gt; &lt;h1&gt;
+
+Рядкові:
+&lt;span&gt; &lt;a&gt;
+    </code></pre>
+</section>
+
+<section>
+    <h3>Flexbox (основи)</h3>
+    <pre><code>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+Flexbox використовується
+для зручного розміщення елементів
+    </code></pre>
+</section>
+
+<section>
+    <h3>Псевдокласи</h3>
+    <pre><code>
+a:hover {
+  color: red;
+}
+
+button:active {
+  background-color: gray;
+}
+
+Псевдокласи реагують
+на дії користувача
+    </code></pre>
+</section>
+
+<section>
+    <h3>Коментарі та поради</h3>
+    <pre><code>
+Коментар у CSS:
+/* Це коментар */
+
+Поради:
+- не використовуй inline-стилі
+- давай зрозумілі назви класам
+- пиши акуратний код
+    </code></pre>
+</section>
+
+</main>
+</body>
+</html>

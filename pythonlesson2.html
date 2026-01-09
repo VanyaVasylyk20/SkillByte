@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умови та цикли</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    <nav>
+        <div class="nazv">
+    <h4 align="center">Умови та цикли</h4>
+       </div>
+       <a href="pythondeveloper.html"><button >Повернутися</button></a>
+    </nav>
+
+
+    <main>
+        <section>
+            <br>Умови (if, else) - це спосіб приймати рішення у програмі, виконуючи код лише тоді, коли виконується певна умова.
+            <br>Цикли (for, while) дозволяють повторювати блоки коду кілька разів, поки виконується певна умова.
+        </section>
+<section>
+    <h3>1. Умова if</h3>
+    <pre><code>a = 10
+
+if a > 5:
+    print("a більше за 5")</code></pre>
+</section>
+
+<section>
+    <h3>2. if – else</h3>
+    <pre><code>age = 16
+
+if age >= 18:
+    print("Ти повнолітній")
+else:
+    print("Ти ще неповнолітній")</code></pre>
+</section>
+
+<section>
+    <h3>3. if – elif – else</h3>
+    <pre><code>mark = 9
+
+if mark >= 10:
+    print("Відмінно")
+elif mark >= 7:
+    print("Добре")
+else:
+    print("Потрібно вчитися краще")</code></pre>
+</section>
+
+<section>
+    <h3>4. Логічні оператори</h3>
+    <pre><code>a = 5
+b = 10
+
+if a &gt; 0 and b &gt; 0:
+    print("Обидва числа додатні")
+
+if a &lt; 0 or b &lt; 0:
+    print("Хоча б одне число від'ємне")
+
+if not a == b:
+    print("Числа не рівні")</code></pre>
+</section>
+
+<section>
+    <h3>5. Цикл for</h3>
+    <pre><code>for i in range(5):
+    print(i)</code></pre>
+</section>
+
+<section>
+    <h3>6. Цикл while</h3>
+    <pre><code>i = 1
+while i &lt;= 5:
+    print(i)
+    i += 1</code></pre>
+</section>
+
+<section>
+    <h3>7. break та continue</h3>
+    <pre><code>for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+
+for i in range(1, 10):
+    if i == 5:
+        continue
+    print(i)</code></pre>
+</section>
+    </main>
+
+</body>
+</html>
